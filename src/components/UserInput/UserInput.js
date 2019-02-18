@@ -1,9 +1,14 @@
 import React from 'react';
 
-const UserInput = () => {
+const UserInput = (props) => {
   return (
     <div id='user-container'>
-      <input id='user-container-input' type="text"/>
+      <input
+        id='user-container-input'
+        type="text" 
+        onChange={(e) => {props.handleInput(e)}}
+        value={props.userInput}
+      />
     </div>
   )
 }

@@ -107,12 +107,21 @@ class App extends Component {
       });
   }
 
+  handleUserInput(e) {
+    const userInput = e.target.value;
+    
+    this.setState({userInput});
+  }
+
   render() {
-    return(
+    return (
       <div id='cal-layout'>
         <h1 id='main-title'> React Calculator</h1>
         <div id='calculator'>
-          <UserInput/>
+          <UserInput
+            handleInput={this.handleUserInput.bind(this)}
+            userInput={this.state.userInput}
+          />
         </div>
       </div>
     );
