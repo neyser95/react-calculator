@@ -1,0 +1,19 @@
+#user-container{
+  background-color: black;
+  padding: 20px 15px;
+  display: flex;
+  justify-content: flex-end;
+  &-input{
+    text-align: right;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    width: 80%;
+    letter-spacing: 2px;
+    border: none;
+  }
+  &-input:focus{
+    outline: none;
+  }
+}
