@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import userInput from './UserInput/UserInput';
+import UserInput from './UserInput/UserInput';
 
 class App extends Component {
   constructor() {
@@ -107,9 +109,11 @@ class App extends Component {
 
   render() {
     return(
-      <div>
-        <h1>React Calculator</h1>
-        <div></div>
+      <div id='cal-layout'>
+        <h1 id='main-title'> React Calculator</h1>
+        <div id='calculator'>
+          <UserInput/>
+        </div>
       </div>
     );
   }
