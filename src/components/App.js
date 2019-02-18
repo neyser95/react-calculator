@@ -106,7 +106,12 @@ class App extends Component {
   }
 
   render() {
-    return <h1 id='title'>Hello!!</h1>;
+    return(
+      <div>
+        <h1>React Calculator</h1>
+        <div></div>
+      </div>
+    );
   }
 }
 
